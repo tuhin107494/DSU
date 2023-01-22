@@ -73,14 +73,14 @@ long double PI = acosl(-1);
 //int sparse_quary(int l,int r){int len=r-l+1;int k=log2(len);return min(table[l][k],table[r-(1<<k)+1][k]);}
 ///====================================StartHere=================////////////
 
-ll n,m;
+
 
 ll x[mx5],y[mx5];
 vector<ll>par,sz;
 vector< pair<ll,pll> >v;
 ll ans[mx5];
  void DSU(int _n){
-        n=_n;
+      ll  n=_n;
         par.resize(n+1);
         sz.resize(n+1);
         for(int i=1; i<=n; i++)par[i]=i,sz[i]=1;
@@ -104,7 +104,7 @@ ll ans[mx5];
 
 void input()
 {
-
+ll n,m;
     cin>>n;
 
     for(int i=1;i<=n;i++)
